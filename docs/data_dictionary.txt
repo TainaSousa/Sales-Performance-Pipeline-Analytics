@@ -1,0 +1,35 @@
+======================================================================
+DICIONÁRIO DE DADOS - SALES ANALYSIS
+======================================================================
+
+COLUNAS ORIGINAIS:
+----------------------------------------------------------------------
+  • opportunity_id
+  • sales_agent
+  • product
+  • account
+  • deal_stage
+  • engage_date
+  • close_date
+  • close_value
+  • manager
+  • regional_office
+  • series
+  • sales_price
+  • sector
+  • year_established
+  • revenue
+  • employees
+  • office_location
+  • subsidiary_of
+
+COLUNAS CALCULADAS:
+----------------------------------------------------------------------
+  • converteu
+  • ciclo_dias
+  • ano
+  • mes
+  • trimestre
+  • dia_semana
+  • categoria_ticket
+  • idade_empresa
