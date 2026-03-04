@@ -55,8 +55,6 @@ Análise completa de pipeline de vendas de uma empresa B2B SaaS, utilizando **Py
 ### Análise e Processamento:
 - **Python 3.9+**
   - Pandas: Manipulação de dados
-  - NumPy: Operações numéricas
-  - Matplotlib/Seaborn: Visualizações exploratórias
 
 ### Banco de Dados:
 - **PostgreSQL 17**
@@ -70,6 +68,43 @@ Análise completa de pipeline de vendas de uma empresa B2B SaaS, utilizando **Py
   - 15+ medidas DAX
   - Drill-down e filtros cruzados
 
----
 
 ## 📂 Estrutura do Projeto
+
+sales-performance-bi/
+│
+├── 📁 data/
+│   ├── 📁 raw/                 # Dados originais (não modificados)
+│   │   ├── sales_pipeline.csv  # 8.800 oportunidades
+│   │   ├── products.csv        # 7 produtos
+│   │   ├── sales_teams.csv     # 35 vendedores
+│   │   └── accounts.csv        # 85 clientes
+│   │
+│   └── 📁 processed/           # Dados limpos e transformados
+│       ├── sales_data_clean.csv      # Dataset master (8.800 linhas)
+│       ├── dim_products.csv          # Dimensão produtos (7)
+│       ├── dim_sales_teams.csv       # Dimensão vendedores (30)
+│       ├── dim_accounts.csv          # Dimensão clientes (85)
+│       └── fact_sales_pipeline.csv   # Tabela fato (8.800)
+│
+|── 📁 docs/
+│   └── data_dictionary.txt    #  Dicionario dos dados contidos nas tabelas 
+|
+|
+| ── 📁 images/                  # Screenshots dos dashboards
+│   ├── dashboard_overview.png       # KPIs executivos
+│   ├── dashboard_products.png       # Análise de produtos
+│   ├── dashboard_funnel.png         # Funil de vendas
+│   └── dashboard_managers.png       # Performance gerentes
+│
+├── 📁 notebooks/
+│   └── sales_analysis.ipynb    # Análise completa em Python/Pandas
+|
+|
+├──📁 sql/
+│   ├── analises_sales_pipeline.sql  # 7 queries analíticas
+│   └── vw_analises.sql              # 4 views para Power BI
+│
+├── .gitignore                  # Arquivos ignorados pelo Git
+├── README.md                   # Documentação do projeto
+└── requirements.txt            # Dependências Python (pandas, jupyter)
