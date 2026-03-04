@@ -70,7 +70,7 @@ Análise completa de pipeline de vendas de uma empresa B2B SaaS, utilizando **Py
 
 
 ## 📂 Estrutura do Projeto
-
+```
 sales-performance-bi/
 │
 ├── 📁 data/
@@ -107,4 +107,4 @@ sales-performance-bi/
 │
 ├── .gitignore                  # Arquivos ignorados pelo Git
 ├── README.md                   # Documentação do projeto
-└── requirements.txt            # Dependências Python (pandas, jupyter)
+```
